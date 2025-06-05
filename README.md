@@ -22,7 +22,22 @@ A news app built using Flutter that allows users to log in (locally), read the l
 
 - 🌓 **Dark Mode Toggle**  
   - Theme adjusts based on system setting (if system is in dark mode, app uses dark theme; otherwise, light theme)
+ 
+- ### 🔑 News API Key
 
+This project uses [NewsAPI.org](https://newsapi.org) for fetching articles.
+
+To run the app, create a free account and get your API key:
+
+1. Go to [https://newsapi.org](https://newsapi.org)
+2. Sign up and copy your API key
+3. Open `lib/features/news/news_service.dart`
+4. Replace:
+
+```dart
+const apiKey = 'YOUR_API_KEY_HERE';
+
+```
 ---
 
 ## 🛠️ Setup Instructions
