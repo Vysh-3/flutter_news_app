@@ -4,7 +4,7 @@ import 'models/article.dart';
 
 class NewsService {
   static Future<List<Article>> fetchArticles() async {
-    const apiKey = '9374cb9f78fb493fb1c65fdef70ef6ca';
+    const apiKey = 'YOUR_NEWSAPI_KEY';
     final res = await http.get(Uri.parse(
         'https://newsapi.org/v2/top-headlines?country=us&apiKey=$apiKey'));
 
